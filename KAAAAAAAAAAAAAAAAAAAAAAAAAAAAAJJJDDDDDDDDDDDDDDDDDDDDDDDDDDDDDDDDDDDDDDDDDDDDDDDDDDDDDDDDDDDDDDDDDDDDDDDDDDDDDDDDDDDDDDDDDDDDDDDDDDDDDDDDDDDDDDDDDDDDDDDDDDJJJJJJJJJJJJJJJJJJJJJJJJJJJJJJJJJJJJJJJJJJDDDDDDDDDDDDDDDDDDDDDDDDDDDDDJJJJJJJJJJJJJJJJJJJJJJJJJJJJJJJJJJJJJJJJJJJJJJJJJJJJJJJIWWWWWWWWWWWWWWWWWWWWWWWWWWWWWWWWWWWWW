@@ -1,0 +1,411 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local WarningFrame = Instance.new("Frame")
+local WarningTextLabel = Instance.new("TextLabel")
+local TextBoxWarn = Instance.new("TextBox")
+local TextButtonDone = Instance.new("TextButton")
+local TextButtonLINK = Instance.new("TextButton")
+local ERRORS = Instance.new("Folder")
+local Error2Frame = Instance.new("Frame")
+local Error2TextLabel = Instance.new("TextLabel")
+local Error3Frame = Instance.new("Frame")
+local Error3TextLabel = Instance.new("TextLabel")
+local Error5Frame = Instance.new("Frame")
+local Error5TextLabel = Instance.new("TextLabel")
+local Error4Frame = Instance.new("Frame")
+local Error4TextLabel = Instance.new("TextLabel")
+local Error6Frame = Instance.new("Frame")
+local Error6TextLabel = Instance.new("TextLabel")
+local Error7Frame = Instance.new("Frame")
+local Error7TextLabel = Instance.new("TextLabel")
+local Error8Frame = Instance.new("Frame")
+local Error8TextLabel = Instance.new("TextLabel")
+local Error10Frame = Instance.new("Frame")
+local Error10TextLabel = Instance.new("TextLabel")
+local Error9Frame = Instance.new("Frame")
+local Error9TextLabel = Instance.new("TextLabel")
+local Error1Frame = Instance.new("Frame")
+local Error1TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+WarningFrame.Name = "WarningFrame"
+WarningFrame.Parent = ScreenGui
+WarningFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WarningFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WarningFrame.BorderSizePixel = 0
+WarningFrame.Size = UDim2.new(0, 966, 0, 584)
+WarningFrame.Visible = false
+
+WarningTextLabel.Name = "Warning TextLabel"
+WarningTextLabel.Parent = WarningFrame
+WarningTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WarningTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WarningTextLabel.BorderSizePixel = 0
+WarningTextLabel.Position = UDim2.new(0.151138723, 0, 0.10958904, 0)
+WarningTextLabel.Size = UDim2.new(0, 589, 0, 50)
+WarningTextLabel.Font = Enum.Font.SourceSansBold
+WarningTextLabel.Text = "You have been hacked you have to get the key to unlock roblox again"
+WarningTextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+WarningTextLabel.TextScaled = true
+WarningTextLabel.TextSize = 14.000
+WarningTextLabel.TextWrapped = true
+
+TextBoxWarn.Name = "TextBoxWarn"
+TextBoxWarn.Parent = WarningFrame
+TextBoxWarn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBoxWarn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBoxWarn.BorderSizePixel = 0
+TextBoxWarn.Position = UDim2.new(0.329192549, 0, 0.23458904, 0)
+TextBoxWarn.Size = UDim2.new(0, 261, 0, 89)
+TextBoxWarn.Font = Enum.Font.SourceSansBold
+TextBoxWarn.PlaceholderText = "Put The Key Here"
+TextBoxWarn.Text = ""
+TextBoxWarn.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBoxWarn.TextScaled = true
+TextBoxWarn.TextSize = 14.000
+TextBoxWarn.TextWrapped = true
+
+TextButtonDone.Name = "TextButtonDone"
+TextButtonDone.Parent = WarningFrame
+TextButtonDone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButtonDone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonDone.BorderSizePixel = 0
+TextButtonDone.Position = UDim2.new(0.309523821, 0, 0.476027399, 0)
+TextButtonDone.Size = UDim2.new(0, 298, 0, 113)
+TextButtonDone.Font = Enum.Font.SourceSansBold
+TextButtonDone.Text = "Done"
+TextButtonDone.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonDone.TextScaled = true
+TextButtonDone.TextSize = 14.000
+TextButtonDone.TextWrapped = true
+
+TextButtonLINK.Name = "TextButtonLINK"
+TextButtonLINK.Parent = WarningFrame
+TextButtonLINK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButtonLINK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonLINK.BorderSizePixel = 0
+TextButtonLINK.Position = UDim2.new(-0.0155279506, 0, 0.28938356, 0)
+TextButtonLINK.Size = UDim2.new(0, 200, 0, 50)
+TextButtonLINK.Font = Enum.Font.SourceSansBold
+TextButtonLINK.Text = "press to get link for unlocking key"
+TextButtonLINK.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonLINK.TextScaled = true
+TextButtonLINK.TextSize = 14.000
+TextButtonLINK.TextWrapped = true
+
+ERRORS.Name = "ERRORS"
+ERRORS.Parent = ScreenGui
+
+Error2Frame.Name = "Error2Frame"
+Error2Frame.Parent = ERRORS
+Error2Frame.Active = true
+Error2Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error2Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error2Frame.BorderSizePixel = 0
+Error2Frame.Position = UDim2.new(0.0331262946, 0, 0.0186379869, 0)
+Error2Frame.Size = UDim2.new(0, 119, 0, 114)
+Error2Frame.Visible = false
+
+Error2TextLabel.Name = "Error2TextLabel"
+Error2TextLabel.Parent = Error2Frame
+Error2TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error2TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error2TextLabel.BorderSizePixel = 0
+Error2TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error2TextLabel.Font = Enum.Font.SourceSansBold
+Error2TextLabel.Text = ":)"
+Error2TextLabel.TextColor3 = Color3.fromRGB(255, 101, 124)
+Error2TextLabel.TextScaled = true
+Error2TextLabel.TextSize = 14.000
+Error2TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error2TextLabel.TextStrokeTransparency = 0.000
+Error2TextLabel.TextWrapped = true
+
+Error3Frame.Name = "Error3Frame"
+Error3Frame.Parent = ERRORS
+Error3Frame.Active = true
+Error3Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error3Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error3Frame.BorderSizePixel = 0
+Error3Frame.Position = UDim2.new(0.530020714, 0, 0.715908468, 0)
+Error3Frame.Size = UDim2.new(0, 119, 0, 114)
+Error3Frame.Visible = false
+
+Error3TextLabel.Name = "Error3TextLabel"
+Error3TextLabel.Parent = Error3Frame
+Error3TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error3TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error3TextLabel.BorderSizePixel = 0
+Error3TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error3TextLabel.Font = Enum.Font.SourceSansBold
+Error3TextLabel.Text = "ERROR"
+Error3TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error3TextLabel.TextScaled = true
+Error3TextLabel.TextSize = 14.000
+Error3TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error3TextLabel.TextStrokeTransparency = 0.000
+Error3TextLabel.TextWrapped = true
+
+Error5Frame.Name = "Error5Frame"
+Error5Frame.Parent = ERRORS
+Error5Frame.Active = true
+Error5Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error5Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error5Frame.BorderSizePixel = 0
+Error5Frame.Position = UDim2.new(0.112836435, 0, 0.0955610648, 0)
+Error5Frame.Size = UDim2.new(0, 119, 0, 114)
+Error5Frame.Visible = false
+
+Error5TextLabel.Name = "Error5TextLabel"
+Error5TextLabel.Parent = Error5Frame
+Error5TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error5TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error5TextLabel.BorderSizePixel = 0
+Error5TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error5TextLabel.Font = Enum.Font.SourceSansBold
+Error5TextLabel.Text = "ERROR"
+Error5TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error5TextLabel.TextScaled = true
+Error5TextLabel.TextSize = 14.000
+Error5TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error5TextLabel.TextStrokeTransparency = 0.000
+Error5TextLabel.TextWrapped = true
+
+Error4Frame.Name = "Error4Frame"
+Error4Frame.Parent = ERRORS
+Error4Frame.Active = true
+Error4Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error4Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error4Frame.BorderSizePixel = 0
+Error4Frame.Position = UDim2.new(0.179089025, 0, 0.177446917, 0)
+Error4Frame.Size = UDim2.new(0, 119, 0, 114)
+Error4Frame.Visible = false
+
+Error4TextLabel.Name = "Error4TextLabel"
+Error4TextLabel.Parent = Error4Frame
+Error4TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error4TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error4TextLabel.BorderSizePixel = 0
+Error4TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error4TextLabel.Font = Enum.Font.SourceSansBold
+Error4TextLabel.Text = "ERROR"
+Error4TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error4TextLabel.TextScaled = true
+Error4TextLabel.TextSize = 14.000
+Error4TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error4TextLabel.TextStrokeTransparency = 0.000
+Error4TextLabel.TextWrapped = true
+
+Error6Frame.Name = "Error6Frame"
+Error6Frame.Parent = ERRORS
+Error6Frame.Active = true
+Error6Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error6Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error6Frame.BorderSizePixel = 0
+Error6Frame.Position = UDim2.new(0.236024842, 0, 0.259332776, 0)
+Error6Frame.Size = UDim2.new(0, 119, 0, 114)
+Error6Frame.Visible = false
+
+Error6TextLabel.Name = "Error6TextLabel"
+Error6TextLabel.Parent = Error6Frame
+Error6TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error6TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error6TextLabel.BorderSizePixel = 0
+Error6TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error6TextLabel.Font = Enum.Font.SourceSansBold
+Error6TextLabel.Text = "ERROR"
+Error6TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error6TextLabel.TextScaled = true
+Error6TextLabel.TextSize = 14.000
+Error6TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error6TextLabel.TextStrokeTransparency = 0.000
+Error6TextLabel.TextWrapped = true
+
+Error7Frame.Name = "Error7Frame"
+Error7Frame.Parent = ERRORS
+Error7Frame.Active = true
+Error7Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error7Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error7Frame.BorderSizePixel = 0
+Error7Frame.Position = UDim2.new(0.309523821, 0, 0.356106967, 0)
+Error7Frame.Size = UDim2.new(0, 119, 0, 114)
+Error7Frame.Visible = false
+
+Error7TextLabel.Name = "Error7TextLabel"
+Error7TextLabel.Parent = Error7Frame
+Error7TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error7TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error7TextLabel.BorderSizePixel = 0
+Error7TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error7TextLabel.Font = Enum.Font.SourceSansBold
+Error7TextLabel.Text = "ERROR"
+Error7TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error7TextLabel.TextScaled = true
+Error7TextLabel.TextSize = 14.000
+Error7TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error7TextLabel.TextStrokeTransparency = 0.000
+Error7TextLabel.TextWrapped = true
+
+Error8Frame.Name = "Error8Frame"
+Error8Frame.Parent = ERRORS
+Error8Frame.Active = true
+Error8Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error8Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error8Frame.BorderSizePixel = 0
+Error8Frame.Position = UDim2.new(0.389233947, 0, 0.480176449, 0)
+Error8Frame.Size = UDim2.new(0, 119, 0, 114)
+Error8Frame.Visible = false
+
+Error8TextLabel.Name = "Error8TextLabel"
+Error8TextLabel.Parent = Error8Frame
+Error8TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error8TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error8TextLabel.BorderSizePixel = 0
+Error8TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error8TextLabel.Font = Enum.Font.SourceSansBold
+Error8TextLabel.Text = "ERROR"
+Error8TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error8TextLabel.TextScaled = true
+Error8TextLabel.TextSize = 14.000
+Error8TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error8TextLabel.TextStrokeTransparency = 0.000
+Error8TextLabel.TextWrapped = true
+
+Error10Frame.Name = "Error10Frame"
+Error10Frame.Parent = ERRORS
+Error10Frame.Active = true
+Error10Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error10Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error10Frame.BorderSizePixel = 0
+Error10Frame.Position = UDim2.new(0.45962733, 0, 0.596801758, 0)
+Error10Frame.Size = UDim2.new(0, 119, 0, 114)
+Error10Frame.Visible = false
+
+Error10TextLabel.Name = "Error10TextLabel"
+Error10TextLabel.Parent = Error10Frame
+Error10TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error10TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error10TextLabel.BorderSizePixel = 0
+Error10TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error10TextLabel.Font = Enum.Font.SourceSansBold
+Error10TextLabel.Text = "ERROR"
+Error10TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error10TextLabel.TextScaled = true
+Error10TextLabel.TextSize = 14.000
+Error10TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error10TextLabel.TextStrokeTransparency = 0.000
+Error10TextLabel.TextWrapped = true
+
+Error9Frame.Name = "Error9Frame"
+Error9Frame.Parent = ERRORS
+Error9Frame.Active = true
+Error9Frame.BackgroundColor3 = Color3.fromRGB(47, 28, 255)
+Error9Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error9Frame.BorderSizePixel = 0
+Error9Frame.Position = UDim2.new(0.616412401, 0, 0.480176449, 0)
+Error9Frame.Size = UDim2.new(0, 119, 0, 114)
+Error9Frame.Visible = false
+
+Error9TextLabel.Name = "Error9TextLabel"
+Error9TextLabel.Parent = Error9Frame
+Error9TextLabel.BackgroundColor3 = Color3.fromRGB(255, 32, 170)
+Error9TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error9TextLabel.BorderSizePixel = 0
+Error9TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error9TextLabel.Font = Enum.Font.SourceSansBold
+Error9TextLabel.Text = "ERROR"
+Error9TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+Error9TextLabel.TextScaled = true
+Error9TextLabel.TextSize = 14.000
+Error9TextLabel.TextStrokeColor3 = Color3.fromRGB(229, 222, 18)
+Error9TextLabel.TextStrokeTransparency = 0.000
+Error9TextLabel.TextWrapped = true
+
+Error1Frame.Name = "Error1Frame"
+Error1Frame.Parent = ERRORS
+Error1Frame.Active = true
+Error1Frame.BackgroundColor3 = Color3.fromRGB(15, 255, 143)
+Error1Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error1Frame.BorderSizePixel = 0
+Error1Frame.Size = UDim2.new(0, 119, 0, 114)
+Error1Frame.Visible = false
+
+Error1TextLabel.Name = "Error1TextLabel"
+Error1TextLabel.Parent = Error1Frame
+Error1TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Error1TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Error1TextLabel.BorderSizePixel = 0
+Error1TextLabel.Size = UDim2.new(0, 109, 0, 97)
+Error1TextLabel.Font = Enum.Font.SourceSansBold
+Error1TextLabel.Text = "You Cant Escape"
+Error1TextLabel.TextColor3 = Color3.fromRGB(7, 24, 255)
+Error1TextLabel.TextScaled = true
+Error1TextLabel.TextSize = 14.000
+Error1TextLabel.TextStrokeColor3 = Color3.fromRGB(116, 229, 11)
+Error1TextLabel.TextStrokeTransparency = 0.000
+Error1TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function FVZXDLW_fake_script() -- TextButtonDone.LocalScript 
+	local script = Instance.new('LocalScript', TextButtonDone)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBoxWarn.Text == "G7*L#Q1GS^MC<D}" then
+			local StarterGui = game:GetService("StarterGui")
+			StarterGui.ScreenGui.WarningFrame.Visible = false
+		else
+			script.Parent.Parent.TextBoxWarn.Text = "Incorrect"
+		wait(5)
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Players.LocalPlayer:Kick("Antivirus has saved you")
+			end)
+		end
+	end)
+end
+coroutine.wrap(FVZXDLW_fake_script)()
+local function MXLLHL_fake_script() -- TextButtonLINK.LocalScript 
+	local script = Instance.new('LocalScript', TextButtonLINK)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(cool)
+	end)
+	
+end
+coroutine.wrap(MXLLHL_fake_script)()
+local function WALMZH_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	StarterGui.ScreenGui.ERRORS.Error1Frame.Visible = true
+	wait(1)
+	StarterGui.ScreenGui.ERRORS.Error2Frame.Visible = true
+	wait(0.5)
+	StarterGui.ScreenGui.ERRORS.Error3Frame.Visible = true
+	wait(1)
+	StarterGui.ScreenGui.ERRORS.Error4Frame.Visible = true
+	wait(1)
+	StarterGui.ScreenGui.ERRORS.Error5Frame.Visible = true
+	wait(0.5)
+	StarterGui.ScreenGui.ERRORS.Error6Frame.Visible = true
+	wait(0.5)
+	StarterGui.ScreenGui.ERRORS.Error7Frame.Visible = true
+	wait(1)
+	StarterGui.ScreenGui.ERRORS.Error8Frame.Visible = true
+	wait(1)
+	StarterGui.ScreenGui.ERRORS.Error9Frame.Visible = true
+	wait(0.5)
+	StarterGui.ScreenGui.ERRORS.Error10Frame.Visible = true
+	wait(3)
+	StarterGui.ScreenGui.WarningFrame.Visible = true
+end
+coroutine.wrap(WALMZH_fake_script)()
